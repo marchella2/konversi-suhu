@@ -25,7 +25,6 @@ void main(){
     print('1. Celcius ke Fahrenheit');
     print('2. Celcius ke Kelvin');
     print('3. Celcius ke Reamur');
-    print('4. Celcius ke Rankine');
     stdout.write('Pilih angka untuk konversi suhu celcius = ');
     var convert = num.parse(stdin.readLineSync()!);
     if (convert == 1){
@@ -46,6 +45,8 @@ void main(){
       // Rumus celcius ke reamur
       var reamur = (4 / 5) * celcius;
       print('$celcius derajat celcius = $reamur derajat reamur');
+    } else {
+      print('Invalid number');
     }
   } else if (input == 2){
     print('test2');
