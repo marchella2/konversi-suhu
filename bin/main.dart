@@ -1,16 +1,6 @@
 import 'dart:io';
 
 void main(){
-  // stdout.write('Masukkan suhu dalam Fahrenheit: ');
-  // var fahrenheit = num.parse(stdin.readLineSync()!);
-  //
-  // // Konversi suhu
-  // var celcius = (fahrenheit - 32) * 5 / 9;
-  //
-  //
-  // // Hasil
-  // print('$fahrenheit derajat fahrenheit = $celcius derajat celcius');
-
   print('--- Aplikasi Konversi Suhu Sederhana ---');
   print('1. Konversi Suhu Celcius');
   print('2. Konversi Suhu Fahrenheit');
@@ -75,7 +65,20 @@ void main(){
       print('$fahrenheit derajat fahrenheit = $reamur derajat reamur');
     }
   } else if (input == 3){
-    print('test3');
+    print('--- Konversi Suhu Kelvin ---');
+    print('1. Kelvin ke Celcius');
+    print('2. Kelvin ke Fahrenheit');
+    print('3. Kelvin ke Reamur');
+    stdout.write('Pilih angka untuk konversi suhu kelvin = ');
+    var convert = num.parse(stdin.readLineSync()!);
+
+    if (convert == 1){
+      stdout.write('Masukkan suhu dalam kelvin = ');
+      var kelvin = num.parse(stdin.readLineSync()!);
+      // Rumus kelvin ke celcius
+      var celcius = kelvin  - 273;
+      print('$kelvin derajat kelvin = $celcius derajat celcius');
+    }
   } else if (input == 4){
     print('test4');
   } else {
