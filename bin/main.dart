@@ -49,7 +49,19 @@ void main(){
       print('Invalid number');
     }
   } else if (input == 2){
-    print('test2');
+    print('--- Konversi Suhu Fahrenheit ---');
+    print('1. Fahrenheit ke Celcius');
+    print('2. Fahrenheit ke Kelvin');
+    print('3. Fahrenheit ke Reamur');
+    stdout.write('Pilih angka untuk konversi suhu fahrenheit = ');
+    var convert = num.parse(stdin.readLineSync()!);
+    if(convert == 1){
+      stdout.write('Masukkan suhu dalam fahrenheit = ');
+      var fahrenheit = num.parse(stdin.readLineSync()!);
+      // Rumus fahrenheit ke celcius
+      var celcius = (5 / 9) * (fahrenheit - 32);
+      print('$fahrenheit derajat fahrenheit = $celcius derajat celcius');
+    }
   } else if (input == 3){
     print('test3');
   } else if (input == 4){
