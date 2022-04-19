@@ -67,12 +67,18 @@ void main(){
       // Rumus fahrenheit ke kelvin
       var kelvin = ((5 / 9) * (fahrenheit - 32)) + 273;
       print('$fahrenheit derajat fahrenheit = $kelvin derajat kelvin');
+    } else if (convert == 3){
+      stdout.write('Masukkan suhu dalam fahrenheit = ');
+      var fahrenheit = num.parse(stdin.readLineSync()!);
+      // Rumus fahrenheit ke reamur
+      var reamur = (4 / 9) * (fahrenheit - 32);
+      print('$fahrenheit derajat fahrenheit = $reamur derajat reamur');
     }
   } else if (input == 3){
     print('test3');
   } else if (input == 4){
     print('test4');
   } else {
-    print('Maaf angka ini tidak berlaku');
+    print('Invalid number');
   }
 }
