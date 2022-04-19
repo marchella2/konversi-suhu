@@ -109,6 +109,12 @@ void main(){
       // Rumus reamur ke celcius
       var celcius = (5 / 4) * reamur;
       print('$reamur derajat reamur = $celcius derajat celcius');
+    } else if (convert == 2){
+      stdout.write('Masukkan suhu dalam reamur = ');
+      var reamur = num.parse(stdin.readLineSync()!);
+      // Rumus reamur ke kelvin
+      var kelvin = ((5 / 4) * reamur) + 273;
+      print('$reamur derajat reamur = $kelvin derajat kelvin');
     }
   } else {
     print('Invalid number');
