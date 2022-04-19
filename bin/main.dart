@@ -96,7 +96,20 @@ void main(){
       print('Invalid number');
     }
   } else if (input == 4){
-    print('test4');
+    print('--- Konversi Suhu Reamur ---');
+    print('1. Reamur ke Celcius');
+    print('2. Reamur ke Kelvin');
+    print('3. Reamur ke Fahrenheit');
+    stdout.write('Pilih angka untuk konversi suhu kelvin = ');
+    var convert = num.parse(stdin.readLineSync()!);
+
+    if (convert == 1){
+      stdout.write('Masukkan suhu dalam reamur = ');
+      var reamur = num.parse(stdin.readLineSync()!);
+      // Rumus reamur ke celcius
+      var celcius = (5 / 4) * reamur;
+      print('$reamur derajat reamur = $celcius derajat celcius');
+    }
   } else {
     print('Invalid number');
   }
