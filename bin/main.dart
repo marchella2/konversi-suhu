@@ -61,6 +61,12 @@ void main(){
       // Rumus fahrenheit ke celcius
       var celcius = (5 / 9) * (fahrenheit - 32);
       print('$fahrenheit derajat fahrenheit = $celcius derajat celcius');
+    } else if (convert == 2){
+      stdout.write('Masukkan suhu dalam fahrenheit = ');
+      var fahrenheit = num.parse(stdin.readLineSync()!);
+      // Rumus fahrenheit ke kelvin
+      var kelvin = ((5 / 9) * (fahrenheit - 32)) + 273;
+      print('$fahrenheit derajat fahrenheit = $kelvin derajat kelvin');
     }
   } else if (input == 3){
     print('test3');
