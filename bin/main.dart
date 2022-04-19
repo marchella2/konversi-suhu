@@ -86,6 +86,14 @@ void main(){
       // Rumus kelvin ke fahrenheit
       var fahrenheit = ((9 / 5) * (kelvin - 273)) + 32;
       print('$kelvin derajat kelvin = $fahrenheit derajat fahrenheit');
+    } else if (convert == 3) {
+      stdout.write('Masukkan suhu dalam kelvin = ');
+      var kelvin = num.parse(stdin.readLineSync()!);
+      // Rumus kelvin ke reamur
+      var reamur = (4 / 5) * (kelvin - 273);
+      print('$kelvin derajat kelvin = $reamur derajat reamur');
+    } else {
+      print('Invalid number');
     }
   } else if (input == 4){
     print('test4');
