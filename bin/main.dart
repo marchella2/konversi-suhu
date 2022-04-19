@@ -80,6 +80,12 @@ void main(){
       // Rumus kelvin ke celcius
       var celcius = kelvin  - 273;
       print('$kelvin derajat kelvin = $celcius derajat celcius');
+    } else if (convert == 2){
+      stdout.write('Masukkan suhu dalam kelvin = ');
+      var kelvin = num.parse(stdin.readLineSync()!);
+      // Rumus kelvin ke fahrenheit
+      var fahrenheit = ((9 / 5) * (kelvin - 273)) + 32;
+      print('$kelvin derajat kelvin = $fahrenheit derajat fahrenheit');
     }
   } else if (input == 4){
     print('test4');
