@@ -63,6 +63,8 @@ void main(){
       // Rumus fahrenheit ke reamur
       var reamur = (4 / 9) * (fahrenheit - 32);
       print('$fahrenheit derajat fahrenheit = $reamur derajat reamur');
+    } else {
+      print('Invalid number');
     }
   } else if (input == 3){
     print('--- Konversi Suhu Kelvin ---');
