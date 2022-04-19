@@ -40,6 +40,12 @@ void main(){
       // Rumus celcius ke kelvin
       var kelvin = celcius + 273;
       print('$celcius derajat celcius = $kelvin derajat kelvin');
+    } else if (convert == 3){
+      stdout.write('Masukkan suhu dalam celcius = ');
+      var celcius = num.parse(stdin.readLineSync()!);
+      // Rumus celcius ke reamur
+      var reamur = (4 / 5) * celcius;
+      print('$celcius derajat celcius = $reamur derajat reamur');
     }
   } else if (input == 2){
     print('test2');
