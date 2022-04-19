@@ -115,6 +115,14 @@ void main(){
       // Rumus reamur ke kelvin
       var kelvin = ((5 / 4) * reamur) + 273;
       print('$reamur derajat reamur = $kelvin derajat kelvin');
+    } else if (convert == 3){
+      stdout.write('Masukkan suhu dalam reamur = ');
+      var reamur = num.parse(stdin.readLineSync()!);
+      // Rumus reamur ke fahrenheit
+      var fahrenheit = ((9 / 4) * reamur) + 32;
+      print('$reamur derajat reamur = $fahrenheit derajat fahrenheit');
+    } else {
+      print('Invalid number');
     }
   } else {
     print('Invalid number');
